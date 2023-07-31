@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
+        <ul id="uList">
+            <li>
+                <label>S</label>
+                <input  class="price" id="s" type="text" value="0" onfocus="if(this.value==0){this.value = ''}"  onfocusout="if(this.value == ''){this.value=0}" oninput="cal()"  >
+            </li>
+            <li>
+                <label>M</label>
+                <input class="price" id="m" type="text" value="0" onfocus="if(this.value==0){this.value = ''}" onfocusout="if(this.value == ''){this.value=0}" oninput="cal()" >
+            </li>
+            <li>
+                <label>L</label>
+                <input class="price" id="l" type="text" value="0" onfocus="if(this.value==0){this.value = ''}" onfocusout="if(this.value == ''){this.value=0}" oninput="cal()" >
+            </li>
+            <li>
+                <label>XL</label>
+                <input class="price" id="xl" type="text" value="0" onfocus="if(this.value==0){this.value = ''}" onfocusout="if(this.value == ''){this.value=0}" oninput="cal()" >
+            </li>
+           
+            
+            
+        </ul>
+    </section>
+    <main>
+        <div class="div-1">
+            <p class="header">Quantity :</p>&nbsp; <p id="quantity" ></p>
+        </div>
+        <div class="div-1">
+            <p class="header">Subtotal :</p>&nbsp; <p id="total" ></p>
+        </div>
+
+    </main>
+    <script src="app.js" ></script>
+</body>
+</html>
